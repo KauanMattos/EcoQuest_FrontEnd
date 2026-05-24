@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Veja como o EcoQuest funciona em 4 etapas: registre ações, acumule pontos, converta e use a passagem." />
+    <title>EcoQuest — Como Funciona</title>
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="navbar__container">
+            <a class="navbar__logo" href="../index.html"><span class="logo-eco">Eco</span><span
+                    class="logo-quest">Quest</span></a>
+            <nav>
+                <ul class="navbar__menu" id="nav-menu">
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="../index.html">Início</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="solucao.html">Solução</a></li>
+                    <li><a class="navbar__link active" href="como-funciona.html">Como Funciona</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="sobre.html">Sobre</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="faq.html">FAQ</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="integrantes.html">Equipe</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="painel.html">Painel</a></li>
+                    <li><a class="navbar__link navbar__cta" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="navbar__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title">Como o EcoQuest funciona</h1>
+                <p class="page-hero__text">
+                    Veja cada etapa do sistema, desde o cadastro até o uso do voucher de transporte.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="tabs section">
+            <div class="container">
+
+                <nav class="tabs__nav" role="tablist" aria-label="Etapas do sistema">
+                    <button class="tabs__btn active" data-tab="tab-cadastro" role="tab">1. Cadastro</button>
+                    <button class="tabs__btn" data-tab="tab-acoes" role="tab">2. Ações</button>
+                    <button class="tabs__btn" data-tab="tab-pontos" role="tab">3. Pontos</button>
+                    <button class="tabs__btn" data-tab="tab-conversao" role="tab">4. Conversão</button>
+                    <button class="tabs__btn" data-tab="tab-voucher" role="tab">5. Voucher</button>
+                </nav>
+
+
+                <div class="tabs__content active" id="tab-cadastro" role="tabpanel">
+                    <div class="tabs__panel">
+                        <div>
+                            <h2 class="tabs__panel-title">Cadastro na SoulUp</h2>
+                            <p class="tabs__panel-text">
+                                Para usar o EcoQuest é preciso ter uma conta na plataforma SoulUp.
+                                O cadastro é gratuito.
+                            </p>
+                            <ul class="tabs__panel-list">
+                                <li>Acesse a plataforma SoulUp</li>
+                                <li>Preencha seus dados pessoais</li>
+                                <li>Verifique seu e-mail</li>
+                                <li>Conecte o EcoQuest à sua conta</li>
+                                <li>Pronto para começar</li>
+                            </ul>
+                        </div>
+                        <div class="tabs__mockup">
+                            <div class="tabs__mockup-bar">
+                                <span class="tabs__mockup-dot"></span>
+                                <span class="tabs__mockup-dot"></span>
+                                <span class="tabs__mockup-dot"></span>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Status da conta</div>
+                                <div class="mockup__stat-value">Verificada</div>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">EcoQuest conectado</div>
+                                <div class="mockup__stat-value">Ativo</div>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Saldo inicial</div>
+                                <div class="mockup__stat-value">0 pts</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tabs__content" id="tab-acoes" role="tabpanel">
+                    <div class="tabs__panel">
+                        <div>
+                            <h2 class="tabs__panel-title">Ações sustentáveis</h2>
+                            <p class="tabs__panel-text">
+                                O usuário registra as ações na plataforma SoulUp e ganha pontos por isso.
+                                Cada ação é validada antes de creditar os pontos.
+                            </p>
+                            <ul class="tabs__panel-list">
+                                <li>Reciclar materiais (plástico, papel, metal)</li>
+                                <li>Registrar economia de energia em casa</li>
+                                <li>Usar transporte público ou bicicleta</li>
+                                <li>Descartar resíduos eletrônicos corretamente</li>
+                                <li>Participar de ações comunitárias verdes</li>
+                            </ul>
+                        </div>
+                        <div class="tabs__mockup">
+                            <div class="tabs__mockup-bar">
+                                <span class="tabs__mockup-dot"></span>
+                                <span class="tabs__mockup-dot"></span>
+                                <span class="tabs__mockup-dot"></span>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Reciclagem</div>
+                                <div class="mockup__stat-value">+ 50 pts</div>
+                                <div class="mockup__progress">
+                                    <div class="mockup__progress-fill" style="width:80%"></div>
+                                </div>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Economia de energia</div>
+                                <div class="mockup__stat-value">+ 30 pts</div>
+                                <div class="mockup__progress">
+                                    <div class="mockup__progress-fill" style="width:60%"></div>
+                                </div>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Transporte limpo</div>
+                                <div class="mockup__stat-value">+ 20 pts</div>
+                                <div class="mockup__progress">
+                                    <div class="mockup__progress-fill" style="width:40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tabs__content" id="tab-pontos" role="tabpanel">
+                    <div class="tabs__panel">
+                        <div>
+                            <h2 class="tabs__panel-title">Saldo de pontos</h2>
+                            <p class="tabs__panel-text">
+                                No painel do EcoQuest o usuário vê o saldo atual, o histórico
+                                de ações registradas e quantas viagens já pode resgatar.
+                            </p>
+                            <ul class="tabs__panel-list">
+                                <li>Saldo atualizado em tempo real</li>
+                                <li>Histórico de todas as ações registradas</li>
+                                <li>Extrato de conversões realizadas</li>
+                                <li>Alertas de pontos próximos ao vencimento</li>
+                                <li>Ranking entre usuários da plataforma</li>
+                            </ul>
+                        </div>
+                        <div class="tabs__mockup">
+                            <div class="tabs__mockup-bar">
+                                <span class="tabs__mockup-dot"></span>
+                                <span class="tabs__mockup-dot"></span>
+                                <span class="tabs__mockup-dot"></span>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Saldo atual</div>
+                                <div class="mockup__stat-value">4.200 pts</div>
+                                <div class="mockup__progress">
+                                    <div class="mockup__progress-fill" style="width:84%"></div>
+                                </div>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Convertidos este mês</div>
+                                <div class="mockup__stat-value">1.500 pts</div>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Posição no ranking</div>
+                                <div class="mockup__stat-value">#47</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tabs__content" id="tab-conversao" role="tabpanel">
+                    <div class="tabs__panel">
+                        <div>
+                            <h2 class="tabs__panel-title">Conversão de pontos</h2>
+                            <p class="tabs__panel-text">
+                                A taxa de conversão é fixa: <strong>100 pontos = R$ 1,00</strong>.
+                                O mínimo para converter é 440 pontos (equivalente a 1 passagem).
+                            </p>
+                            <ul class="tabs__panel-list">
+                                <li>Mínimo de 440 pontos por conversão (1 passagem)</li>
+                                <li>Sem taxa de conversão para o usuário</li>
+                                <li>Confirmação por e-mail em tempo real</li>
+                                <li>Rastreamento completo da transação</li>
+                                <li>Cancelamento disponível em até 1 hora</li>
+                            </ul>
+                        </div>
+                        <div class="tabs__mockup">
+                            <div class="tabs__mockup-bar">
+                                <span class="tabs__mockup-dot"></span>
+                                <span class="tabs__mockup-dot"></span>
+                                <span class="tabs__mockup-dot"></span>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Pontos a converter</div>
+                                <div class="mockup__stat-value">2.200 pts</div>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Crédito gerado</div>
+                                <div class="mockup__stat-value">R$ 22,00</div>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Viagens disponíveis</div>
+                                <div class="mockup__stat-value">5 viagens</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tabs__content" id="tab-voucher" role="tabpanel">
+                    <div class="tabs__panel">
+                        <div>
+                            <h2 class="tabs__panel-title">Voucher de transporte</h2>
+                            <p class="tabs__panel-text">
+                                Depois de converter, o usuário recebe um voucher digital.
+                                A forma de uso depende da fase do sistema e da cidade.
+                            </p>
+                            <ul class="tabs__panel-list">
+                                <li>QR Code para validação nas catracas</li>
+                                <li>Recarga direta no Cartão BOM (SP)</li>
+                                <li>Recarga no Bilhete Único (SP)</li>
+                                <li>Código de recarga em terminais parceiros</li>
+                                <li>Validade de 90 dias após a conversão</li>
+                            </ul>
+                        </div>
+                        <div class="tabs__mockup">
+                            <div class="tabs__mockup-bar">
+                                <span class="tabs__mockup-dot"></span>
+                                <span class="tabs__mockup-dot"></span>
+                                <span class="tabs__mockup-dot"></span>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Voucher ECO-2026-4821</div>
+                                <div class="mockup__stat-value">Ativo</div>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Valor do voucher</div>
+                                <div class="mockup__stat-value">R$ 22,00</div>
+                            </div>
+                            <div class="mockup__stat">
+                                <div class="mockup__stat-label">Válido até</div>
+                                <div class="mockup__stat-value">22/08/2026</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-section__title">Quer ver o simulador?</h2>
+                <p class="cta-section__text">Calcule quantas viagens seus pontos já valem.</p>
+                <div class="cta-section__actions">
+                    <a class="btn btn-primary btn-lg" href="solucao.html">Abrir Simulador</a>
+                    <a class="btn btn-outline" href="faq.html">Ver FAQ</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__logo">EcoQuest</div>
+                    <p class="footer__desc">Transformando ações sustentáveis em mobilidade urbana.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Páginas</h4>
+                    <ul class="footer__links">
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="solucao.html">Solução</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Projeto</h4>
+                    <ul class="footer__links">
+                        <li><a href="integrantes.html">Equipe</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2026 EcoQuest</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="btn-topo"
+        style="position:fixed;bottom:2.4rem;right:2.4rem;width:4.4rem;height:4.4rem;border-radius:50%;background:var(--text-white);color:var(--bg-dark);border:none;font-size:1.8rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s;z-index:999;"
+        aria-label="Voltar ao topo">&#8593;</button>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/solucao.js" defer></script>
+</body>
+
+</html>
