@@ -1,0 +1,345 @@
+@media (max-width: 992px) {
+
+
+    .navbar__hamburger {
+        display: flex;
+    }
+
+    .navbar__menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.99);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 1rem 0;
+    }
+
+    .navbar__menu.open {
+        display: flex;
+    }
+
+    .navbar__link {
+        width: 100%;
+        padding: 1.4rem 2.4rem;
+        border-bottom: 1px solid var(--border);
+        font-size: 1.7rem;
+    }
+
+    .navbar__link::after {
+        display: none;
+    }
+
+    .navbar__cta {
+        margin: 1.2rem 2.4rem;
+        width: calc(100% - 4.8rem);
+        text-align: center;
+    }
+
+
+    .hero__grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .hero__title {
+        font-size: 4.8rem;
+    }
+
+    .hero__widget {
+        order: -1;
+    }
+
+    .hero__stats {
+        gap: 3rem;
+    }
+
+
+    .steps__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .benefits__grid,
+    .tech__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .impact__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .team__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .problem__grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+
+
+
+
+    .contact__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        padding: 2.8rem;
+    }
+
+    .form__row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 8rem 0;
+    }
+
+
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .flow__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+    }
+
+    .flow__item:first-child {
+        border-radius: var(--radius-lg) 0 0 0;
+    }
+
+    .flow__item:nth-child(2) {
+        border-radius: 0 var(--radius-lg) 0 0;
+    }
+
+    .flow__item:nth-child(3) {
+        border-radius: 0 0 0 var(--radius-lg);
+    }
+
+    .flow__item:last-child {
+        border-radius: 0 0 var(--radius-lg) 0;
+    }
+
+    .flow__item:nth-child(2)::after {
+        display: none;
+    }
+
+
+    .tabs__panel {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 58%;
+    }
+
+    .section {
+        padding: 6rem 0;
+    }
+
+    .section__title {
+        font-size: 3.2rem;
+    }
+
+    .page-hero {
+        padding: 12rem 0 5rem;
+    }
+
+    .page-hero__title {
+        font-size: 4rem;
+    }
+
+
+    .hero {
+        padding: 10rem 0 5rem;
+    }
+
+    .hero__title {
+        font-size: 4rem;
+    }
+
+    .hero__text {
+        font-size: 1.7rem;
+    }
+
+    .hero__stats {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+
+    .problem__stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .simulator__results {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .simulator__box {
+        padding: 3rem 2rem;
+    }
+
+    .simulator__value {
+        font-size: 4.8rem;
+    }
+
+
+    .footer__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .container {
+        padding: 0 1.6rem;
+    }
+
+
+    .navbar__logo {
+        font-size: 2rem;
+    }
+
+
+    .hero__title {
+        font-size: 3.6rem;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero__actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero__stats {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+
+    .steps__grid,
+    .benefits__grid,
+    .tech__grid,
+    .impact__grid,
+    .team__grid,
+    .flow__grid,
+    .simulator__results,
+    .problem__stats {
+        grid-template-columns: 1fr;
+    }
+
+
+    .cta-section__actions {
+        flex-direction: column;
+    }
+
+    .cta-section__actions .btn {
+        width: 100%;
+    }
+
+    .cta-section__title {
+        font-size: 3.2rem;
+    }
+
+
+    .form {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .form__row {
+        grid-template-columns: 1fr;
+    }
+
+
+    .simulator__value {
+        font-size: 4rem;
+    }
+
+
+    .tabs__nav {
+        flex-direction: column;
+        border-bottom: none;
+    }
+
+    .tabs__btn {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        border-bottom-color: var(--border) !important;
+    }
+
+    .tabs__btn.active {
+        border-color: var(--neon-border);
+    }
+
+
+    .flow__item::after {
+        display: none !important;
+    }
+
+    .flow__item {
+        border-radius: var(--radius) !important;
+    }
+
+    .flow__grid {
+        gap: 1rem;
+    }
+
+
+    .roadmap__timeline {
+        padding-left: 2.4rem;
+    }
+
+
+    .section__title {
+        font-size: 2.8rem;
+    }
+
+    .page-hero__title {
+        font-size: 3.2rem;
+    }
+
+
+    .faq__question {
+        padding: 1.8rem;
+    }
+
+    .faq__question-text {
+        font-size: 1.6rem;
+    }
+
+
+    .footer__grid {
+        gap: 2.5rem;
+    }
+}
