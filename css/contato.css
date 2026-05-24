@@ -85,8 +85,13 @@
     outline: none;
 }
 
-.form__input.valid   { border-color: #22c55e; }
-.form__input.invalid { border-color: #ef4444; }
+.form__input.valid {
+    border-color: #22c55e;
+}
+
+.form__input.invalid {
+    border-color: #ef4444;
+}
 
 .form__select {
     appearance: none;
@@ -104,7 +109,9 @@
     display: none;
 }
 
-.form__error.visible { display: block; }
+.form__error.visible {
+    display: block;
+}
 
 .form__submit {
     width: 100%;
@@ -135,7 +142,9 @@
     margin-top: 1.6rem;
 }
 
-.form__success.visible { display: block; }
+.form__success.visible {
+    display: block;
+}
 
 .form__success-text {
     font-size: 1.6rem;

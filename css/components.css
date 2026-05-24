@@ -31,8 +31,15 @@
     letter-spacing: 0.02em;
 }
 
-.logo-eco   { color: var(--azul);  font-weight: 700; }
-.logo-quest { color: #0f172a;     font-weight: 400; }
+.logo-eco {
+    color: var(--azul);
+    font-weight: 700;
+}
+
+.logo-quest {
+    color: #0f172a;
+    font-weight: 400;
+}
 
 .navbar__menu {
     display: flex;
@@ -63,7 +70,9 @@
     transition: opacity var(--transition);
 }
 
-.navbar__cta:hover { opacity: 0.85; }
+.navbar__cta:hover {
+    opacity: 0.85;
+}
 
 .navbar__hamburger {
     display: none;
@@ -177,7 +186,9 @@
     border-bottom: 1px solid #000000;
 }
 
-.page-hero__badge { margin-bottom: 2rem; }
+.page-hero__badge {
+    margin-bottom: 2rem;
+}
 
 .page-hero__title {
     font-size: 4.8rem;
@@ -187,7 +198,9 @@
     line-height: 1.15;
 }
 
-.page-hero__title span { color: var(--text-white); }
+.page-hero__title span {
+    color: var(--text-white);
+}
 
 .page-hero__text {
     font-size: 1.8rem;
@@ -245,7 +258,9 @@
     transition: color var(--transition);
 }
 
-.footer__links a:hover { color: var(--verde); }
+.footer__links a:hover {
+    color: var(--verde);
+}
 
 .footer__bottom {
     border-top: 1px solid #1a1a1a;
@@ -262,6 +277,9 @@
     color: #64748b;
 }
 
-.logo-eco, .logo-quest,
+.logo-eco,
+.logo-quest,
 .footer__copy .logo-eco,
-.footer__copy .logo-quest { color: inherit; }
+.footer__copy .logo-quest {
+    color: inherit;
+}

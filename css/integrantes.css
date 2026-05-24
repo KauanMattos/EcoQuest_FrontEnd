@@ -1,4 +1,6 @@
-.page-hero .section__label { margin-bottom: 0.8rem; }
+.page-hero .section__label {
+    margin-bottom: 0.8rem;
+}
 
 .team__grid {
     display: grid;
@@ -35,12 +37,29 @@
     margin: 0 auto 2rem;
 }
 
-.member-card__avatar--blue   { background: #3b82f6; }
-.member-card__avatar--green  { background: #22c55e; }
-.member-card__avatar--orange { background: #f97316; }
-.member-card__avatar--purple { background: #8b5cf6; }
-.member-card__avatar--red    { background: #ef4444; }
-.member-card__avatar--teal   { background: #14b8a6; }
+.member-card__avatar--blue {
+    background: #3b82f6;
+}
+
+.member-card__avatar--green {
+    background: #22c55e;
+}
+
+.member-card__avatar--orange {
+    background: #f97316;
+}
+
+.member-card__avatar--purple {
+    background: #8b5cf6;
+}
+
+.member-card__avatar--red {
+    background: #ef4444;
+}
+
+.member-card__avatar--teal {
+    background: #14b8a6;
+}
 
 .member-card__name {
     font-size: 1.9rem;

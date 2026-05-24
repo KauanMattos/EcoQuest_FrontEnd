@@ -1,4 +1,6 @@
-.faq-section { background: var(--bg-dark); }
+.faq-section {
+    background: var(--bg-dark);
+}
 
 .faq__list {
     max-width: 800px;
@@ -42,7 +44,9 @@
     transition: color var(--transition);
 }
 
-.faq__item.active .faq__question-text { color: var(--neon); }
+.faq__item.active .faq__question-text {
+    color: var(--neon);
+}
 
 .faq__icon {
     width: 3.2rem;

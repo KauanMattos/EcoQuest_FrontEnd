@@ -32,7 +32,9 @@
     margin-bottom: 2rem;
 }
 
-.hero__title span { color: var(--azul); }
+.hero__title span {
+    color: var(--azul);
+}
 
 .hero__text {
     font-size: 1.7rem;
@@ -101,7 +103,9 @@
     margin-bottom: 2rem;
 }
 
-.hero__widget-progress { margin-bottom: 2.4rem; }
+.hero__widget-progress {
+    margin-bottom: 2.4rem;
+}
 
 .hero__widget-progress-label {
     display: flex;
@@ -190,7 +194,9 @@
     color: var(--text-muted);
 }
 
-.how-it-works { background: var(--bg-dark); }
+.how-it-works {
+    background: var(--bg-dark);
+}
 
 .steps__grid {
     display: grid;
