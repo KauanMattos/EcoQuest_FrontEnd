@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Saiba mais sobre o projeto EcoQuest, desenvolvido para o FIAP Challenge 2026 pela turma 1TDS da FIAP." />
+    <title>EcoQuest — Sobre</title>
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="navbar__container">
+            <a class="navbar__logo" href="../index.html"><span class="logo-eco">Eco</span><span
+                    class="logo-quest">Quest</span></a>
+            <nav>
+                <ul class="navbar__menu" id="nav-menu">
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="../index.html">Início</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="solucao.html">Solução</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="como-funciona.html">Como Funciona</a></li>
+                    <li><a class="navbar__link active" href="sobre.html">Sobre</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="faq.html">FAQ</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="integrantes.html">Equipe</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="painel.html">Painel</a></li>
+                    <li><a class="navbar__link navbar__cta" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="navbar__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title">Sobre o EcoQuest</h1>
+                <p class="page-hero__text">
+                    O EcoQuest é o projeto desenvolvido pela equipe para o Desafio 2 da SoulUp
+                    no FIAP Challenge 2026.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="problem section">
+            <div class="container">
+                <div class="problem__grid">
+                    <div>
+                        <h2 class="section__title" style="text-align:left; margin-bottom:2rem;">
+                            O problema que o projeto resolve
+                        </h2>
+                        <p class="problem__text">
+                            Muitas pessoas têm dificuldade de pagar o transporte público no dia a dia.
+                            O custo das passagens pesa bastante no orçamento de quem tem renda baixa.
+                        </p>
+                        <p class="problem__text">
+                            Além disso, a plataforma SoulUp teve uma queda de
+                            <strong style="color:var(--text-white)">77%</strong>
+                            nos usuários ativos em 2026. As pessoas precisam de um incentivo real para continuar usando.
+                        </p>
+                        <p class="problem__text">
+                            O EcoQuest tenta resolver esses dois problemas ao mesmo tempo: incentiva ações
+                            sustentáveis e dá créditos de transporte como recompensa.
+                        </p>
+                    </div>
+                    <div class="problem__stats">
+                        <div class="problem__stat">
+                            <div class="problem__stat-number">77%</div>
+                            <div class="problem__stat-label">queda de usuários ativos na SoulUp (2025 a 2026)</div>
+                        </div>
+                        <div class="problem__stat">
+                            <div class="problem__stat-number">61K</div>
+                            <div class="problem__stat-label">usuários cadastrados sem engajamento suficiente</div>
+                        </div>
+                        <div class="problem__stat">
+                            <div class="problem__stat-number">R$4,40</div>
+                            <div class="problem__stat-label">custo médio de uma passagem em São Paulo (2026)</div>
+                        </div>
+                        <div class="problem__stat">
+                            <div class="problem__stat-number">30%</div>
+                            <div class="problem__stat-label">da renda de famílias vulneráveis vai para transporte</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="solution section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">O que o EcoQuest faz</h2>
+                </div>
+                <div class="solution__list">
+                    <div class="solution__item">
+                        <div>
+                            <h3 class="solution__item-title">Pontos com valor real</h3>
+                            <p class="solution__item-text">
+                                As ações sustentáveis geram pontos que podem ser convertidos
+                                em créditos de transporte público. 100 pontos = R$ 1,00.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="solution__item">
+                        <div>
+                            <h3 class="solution__item-title">Voucher de transporte</h3>
+                            <p class="solution__item-text">
+                                No início o sistema gera vouchers digitais. A ideia é evoluir
+                                para integração direta com o Cartão BOM e o Bilhete Único.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="solution__item">
+                        <div>
+                            <h3 class="solution__item-title">Validação das ações</h3>
+                            <p class="solution__item-text">
+                                O sistema verifica as ações antes de creditar os pontos
+                                para evitar que usuários ganhem pontos sem fazer nada.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="solution__item">
+                        <div>
+                            <h3 class="solution__item-title">Cálculo de CO2 evitado</h3>
+                            <p class="solution__item-text">
+                                Para cada viagem financiada pelos pontos, o sistema calcula
+                                quanto CO2 foi evitado e mostra isso para o usuário.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__logo">EcoQuest</div>
+                    <p class="footer__desc">Transformando ações sustentáveis em mobilidade urbana.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Páginas</h4>
+                    <ul class="footer__links">
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="solucao.html">Solução</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Projeto</h4>
+                    <ul class="footer__links">
+                        <li><a href="integrantes.html">Equipe</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2026 EcoQuest</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="btn-topo"
+        style="position:fixed;bottom:2.4rem;right:2.4rem;width:4.4rem;height:4.4rem;border-radius:50%;background:var(--text-white);color:var(--bg-dark);border:none;font-size:1.8rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s;z-index:999;"
+        aria-label="Voltar ao topo">&#8593;</button>
+    <script src="../js/main.js" defer></script>
+</body>
+
+</html>

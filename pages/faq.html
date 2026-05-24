@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Perguntas frequentes sobre o EcoQuest — dúvidas sobre pontos, conversão, vouchers e transporte público." />
+    <title>EcoQuest — FAQ</title>
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="navbar__container">
+            <a class="navbar__logo" href="../index.html"><span class="logo-eco">Eco</span><span
+                    class="logo-quest">Quest</span></a>
+            <nav>
+                <ul class="navbar__menu" id="nav-menu">
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="../index.html">Início</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="solucao.html">Solução</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="como-funciona.html">Como Funciona</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="sobre.html">Sobre</a></li>
+                    <li><a class="navbar__link active" href="faq.html">FAQ</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="integrantes.html">Equipe</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="painel.html">Painel</a></li>
+                    <li><a class="navbar__link navbar__cta" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="navbar__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="faq-section section" style="padding-top: 14rem;">
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__label">PERGUNTAS FREQUENTES</p>
+                    <h1 class="section__title">Ficou alguma dúvida?</h1>
+                    <p class="section__subtitle">Respondemos as perguntas mais comuns sobre a plataforma e o sistema de
+                        pontos.</p>
+                </div>
+
+                <ol class="faq__list">
+
+                    <li class="faq__item" onclick="toggleFaq(0)">
+                        <button class="faq__question">
+                            <span class="faq__question-text">O que é o EcoQuest?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>O EcoQuest é um sistema que converte pontos de ações sustentáveis em créditos de
+                                transporte público. O projeto foi desenvolvido para o FIAP Challenge 2026, no Desafio 2
+                                da SoulUp.</p>
+                        </div>
+                    </li>
+
+                    <li class="faq__item" onclick="toggleFaq(1)">
+                        <button class="faq__question">
+                            <span class="faq__question-text">Como ganho pontos?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Os pontos são gerados pela plataforma SoulUp quando o usuário registra ações
+                                sustentáveis, como reciclagem, economia de energia ou uso de transporte coletivo.</p>
+                        </div>
+                    </li>
+
+                    <li class="faq__item" onclick="toggleFaq(2)">
+                        <button class="faq__question">
+                            <span class="faq__question-text">Como converter pontos em crédito de transporte?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>No painel do EcoQuest, o usuário escolhe quantos pontos quer converter e solicita o
+                                voucher. A taxa é <strong>100 pontos = R$ 1,00</strong> e o mínimo é 440 pontos (1
+                                passagem).</p>
+                        </div>
+                    </li>
+
+                    <li class="faq__item" onclick="toggleFaq(3)">
+                        <button class="faq__question">
+                            <span class="faq__question-text">Quais transportes são aceitos?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>No começo, os créditos funcionam como vouchers digitais. A ideia futura é integrar com o
+                                Cartão BOM e o Bilhete Único em São Paulo, e depois expandir para outras cidades.</p>
+                        </div>
+                    </li>
+
+                    <li class="faq__item" onclick="toggleFaq(4)">
+                        <button class="faq__question">
+                            <span class="faq__question-text">Os pontos têm prazo de validade?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Sim, os pontos expiram após 12 meses. O sistema avisa o usuário quando os pontos estão
+                                perto de vencer.</p>
+                        </div>
+                    </li>
+
+                    <li class="faq__item" onclick="toggleFaq(5)">
+                        <button class="faq__question">
+                            <span class="faq__question-text">Como o sistema evita fraudes?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>As ações precisam ser validadas antes de gerar pontos. O sistema também registra todas as
+                                conversões e monitora comportamentos fora do padrão.</p>
+                        </div>
+                    </li>
+
+                    <li class="faq__item" onclick="toggleFaq(6)">
+                        <button class="faq__question">
+                            <span class="faq__question-text">Posso transferir pontos para outra pessoa?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Não por enquanto. A transferência de pontos não foi incluída nessa versão do projeto, mas
+                                pode ser adicionada em versões futuras.</p>
+                        </div>
+                    </li>
+
+                    <li class="faq__item" onclick="toggleFaq(7)">
+                        <button class="faq__question">
+                            <span class="faq__question-text">Como é calculado o CO2 evitado?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Cada viagem financiada tem uma distância média de 6 km. Multiplicamos isso pelo fator de
+                                emissão do carro particular (0,089 kg de CO2 por km) para estimar o quanto foi evitado.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="faq__item" onclick="toggleFaq(8)">
+                        <button class="faq__question">
+                            <span class="faq__question-text">Quem pode usar o EcoQuest?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Qualquer pessoa com conta na SoulUp pode usar. O foco do projeto são pessoas que usam
+                                transporte público com frequência e têm dificuldade de pagar as passagens.</p>
+                        </div>
+                    </li>
+
+                </ol>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-section__title">Ainda tem dúvidas?</h2>
+                <p class="cta-section__text">Entre em contato com a equipe EcoQuest.</p>
+                <div class="cta-section__actions">
+                    <a class="btn btn-primary" href="contato.html">Falar com a equipe</a>
+                    <a class="btn btn-outline" href="sobre.html">Sobre o projeto</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__logo">EcoQuest</div>
+                    <p class="footer__desc">Transformando ações sustentáveis em mobilidade urbana.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Páginas</h4>
+                    <ul class="footer__links">
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="solucao.html">Solução</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Projeto</h4>
+                    <ul class="footer__links">
+                        <li><a href="integrantes.html">Equipe</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2026 EcoQuest</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="btn-topo"
+        style="position:fixed;bottom:2.4rem;right:2.4rem;width:4.4rem;height:4.4rem;border-radius:50%;background:var(--text-white);color:var(--bg-dark);border:none;font-size:1.8rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s;z-index:999;"
+        aria-label="Voltar ao topo">&#8593;</button>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/faq.js" defer></script>
+</body>
+
+</html>

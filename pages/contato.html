@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Entre em contato com a equipe do EcoQuest para dúvidas, feedback ou parcerias." />
+    <title>EcoQuest — Contato</title>
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="navbar__container">
+            <a class="navbar__logo" href="../index.html"><span class="logo-eco">Eco</span><span
+                    class="logo-quest">Quest</span></a>
+            <nav>
+                <ul class="navbar__menu" id="nav-menu">
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="../index.html">Início</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="solucao.html">Solução</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="como-funciona.html">Como Funciona</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="sobre.html">Sobre</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="faq.html">FAQ</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="integrantes.html">Equipe</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="painel.html">Painel</a></li>
+                    <li><a class="navbar__link navbar__cta active" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="navbar__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact__grid">
+
+
+                    <div class="contact__info">
+                        <p class="contact__label">CONTATO</p>
+                        <h1 class="contact__title">Fale com a equipe</h1>
+                        <p class="contact__text">
+                            Tem dúvidas sobre o projeto ou quer saber mais sobre a solução?
+                        </p>
+                    </div>
+
+
+                    <form class="form" id="form-contato" onsubmit="enviar(event)" novalidate>
+
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label" for="nome">Nome</label>
+                                <input class="form__input" type="text" id="nome" name="nome" placeholder="Seu nome"
+                                    required />
+                                <span class="form__error" id="erro-nome"></span>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="email">E-mail</label>
+                                <input class="form__input" type="email" id="email" name="email"
+                                    placeholder="seu@email.com" required />
+                                <span class="form__error" id="erro-email"></span>
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="assunto">Assunto</label>
+                            <select class="form__select" id="assunto" name="assunto" required>
+                                <option value="">Selecione o assunto</option>
+                                <option value="duvida">Dúvida sobre o projeto</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="parceria">Proposta de parceria</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            <span class="form__error" id="erro-assunto"></span>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="mensagem">Mensagem</label>
+                            <textarea class="form__textarea" id="mensagem" name="mensagem"
+                                placeholder="Escreva sua mensagem..." required></textarea>
+                            <span class="form__error" id="erro-mensagem"></span>
+                        </div>
+
+                        <button class="form__submit" type="submit">Enviar mensagem</button>
+
+                        <div class="form__success" id="form-success">
+                            <p class="form__success-text">Mensagem enviada! Entraremos em contato em breve.</p>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__logo">EcoQuest</div>
+                    <p class="footer__desc">Transformando ações sustentáveis em mobilidade urbana.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Páginas</h4>
+                    <ul class="footer__links">
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="solucao.html">Solução</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Projeto</h4>
+                    <ul class="footer__links">
+                        <li><a href="integrantes.html">Equipe</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2026 EcoQuest</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="btn-topo"
+        style="position:fixed;bottom:2.4rem;right:2.4rem;width:4.4rem;height:4.4rem;border-radius:50%;background:var(--text-white);color:var(--bg-dark);border:none;font-size:1.8rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s;z-index:999;"
+        aria-label="Voltar ao topo">&#8593;</button>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/contato.js" defer></script>
+</body>
+
+</html>
