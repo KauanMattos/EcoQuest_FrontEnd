@@ -1,0 +1,146 @@
+
+
+.contact-section {
+    background: #ffffff;
+    padding: 14rem 0 8rem;
+}
+
+.contact__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 6rem;
+    align-items: start;
+}
+
+.contact__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--azul);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-bottom: 1.2rem;
+}
+
+.contact__title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 1.6rem;
+    line-height: 1.2;
+}
+
+.contact__text {
+    font-size: 1.7rem;
+    color: #64748b;
+    line-height: 1.7;
+    max-width: 440px;
+}
+
+.form {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 3.6rem;
+}
+
+.form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1.8rem;
+}
+
+.form__label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.form__input,
+.form__select,
+.form__textarea {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.5rem;
+    color: #0f172a;
+    transition: border-color var(--transition);
+    width: 100%;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+    color: #94a3b8;
+}
+
+.form__input:focus,
+.form__select:focus,
+.form__textarea:focus {
+    border-color: var(--azul);
+    outline: none;
+}
+
+.form__input.valid   { border-color: #22c55e; }
+.form__input.invalid { border-color: #ef4444; }
+
+.form__select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.form__textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.form__error {
+    font-size: 1.3rem;
+    color: #ef4444;
+    display: none;
+}
+
+.form__error.visible { display: block; }
+
+.form__submit {
+    width: 100%;
+    padding: 1.4rem;
+    background: var(--azul);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 0.8rem;
+}
+
+.form__submit:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.form__success {
+    display: none;
+    background: rgba(2, 132, 199, 0.08);
+    border: 1px solid rgba(2, 132, 199, 0.3);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 1.6rem;
+}
+
+.form__success.visible { display: block; }
+
+.form__success-text {
+    font-size: 1.6rem;
+    color: var(--azul);
+    font-weight: 600;
+}
