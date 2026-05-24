@@ -1,11 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EcoQuest - Seus pontos movem você</title>
 </head>
 <body>
+
+    <!-- Navbar -->
+         
+    <header class="navbar" id="navbar">
+        <div class="navbar__container">
+            <a class="navbar__logo" href="index.html">
+                <span class="logo-eco">Eco</span><span class="logo-quest">Quest</span>
+            </a>
+            <nav>
+                <ul class="navbar__menu" id="nav-menu">
+                    <li><a class="navbar__link active" href="index.html">Início</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="pages/solucao.html">Solução</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="pages/como-funciona.html">Como Funciona</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="pages/sobre.html">Sobre</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="pages/faq.html">FAQ</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="pages/integrantes.html">Equipe</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="pages/painel.html">Painel</a></li>
+                    <li><a class="navbar__link navbar__cta" href="pages/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="navbar__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+    <!-- Conteúdo Principal-->
+
+        <section class="hero">
+            <div class="container">
+
+                <div class="hero__grid">
+
+                    <div class="hero__content">
+                        <span class="hero__tag">EcoQuest</span>
+                        <h1 class="hero__title">
+                            Seus pontos viram<br />
+                            <span>passagem de ônibus</span>
+                        </h1>
+                        <p class="hero__text">
+                            Acumule pontos com ações sustentáveis e converta em
+                            créditos reais para o transporte público de São Paulo.
+                        </p>
+                        <div class="hero__actions">
+                            <a class="btn btn-primary btn-lg" href="pages/painel.html">Como funciona</a>
+                            <a class="btn btn-outline" href="pages/integrantes.html">Nossa equipe</a>
+                        </div>
+                    </div>
+
+                    <div class="hero__widget">
+                        <div class="hero__widget-header">
+                            <span class="hero__widget-title">Seus pontos</span>
+                            <span class="hero__widget-today">hoje</span>
+                        </div>
+                        <div class="hero__widget-balance">
+                            <span class="hero__widget-value">2.840</span>
+                            <span class="hero__widget-unit">pts</span>
+                        </div>
+                        <p class="hero__widget-equiv">R$ 28,40 em transporte</p>
+                        <div class="hero__widget-progress">
+                            <div class="hero__widget-progress-label">
+                                <span>Meta do mês</span>
+                                <span>62%</span>
+                            </div>
+                            <div class="hero__widget-bar">
+                                <div class="hero__widget-bar-fill" style="width:62%"></div>
+                            </div>
+                        </div>
+                        <div class="hero__widget-missions">
+                            <div class="hero__widget-mission">
+                                
+                                <div>
+                                    <div class="hero__widget-mission-name">Reciclagem</div>
+                                    <div class="hero__widget-mission-sub">Missão diária</div>
+                                </div>
+                                <span class="hero__widget-mission-pts">+50 pts</span>
+                            </div>
+                            <div class="hero__widget-mission">
+                                
+                                <div>
+                                    <div class="hero__widget-mission-name">Economia de energia</div>
+                                    <div class="hero__widget-mission-sub">Concluída</div>
+                                </div>
+                                <span class="hero__widget-mission-pts">+80 pts</span>
+                            </div>
+                            <div class="hero__widget-mission">
+                                
+                                <div>
+                                    <div class="hero__widget-mission-name">Transporte coletivo</div>
+                                    <div class="hero__widget-mission-sub">Disponível</div>
+                                </div>
+                                <span class="hero__widget-mission-pts">+30 pts</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                 <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-value">100 pts</span>
+                        <span class="hero__stat-label">= 1 passagem</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-value">12,4 kg</span>
+                        <span class="hero__stat-label">CO economizado</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-value">34+</span>
+                        <span class="hero__stat-label">viagens registradas</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="how-it-works section">
+            <div class="container">
+                <div class="section__header">
+                    <p class="section__label">COMO FUNCIONA</p>
+                    <h2 class="section__title">Simples como andar de ônibus</h2>
+                    <p class="section__subtitle">Em 4 passos você transforma ações sustentáveis em mobilidade real.</p>
+                </div>
+
+                <div class="steps__grid">
+                    <div class="step">
+                        <div class="step__number">1</div>
+                        <h3 class="step__title">Registrar ação</h3>
+                        <p class="step__text">
+                            O usuário registra ações como reciclagem, economia de energia
+                            e uso de transporte coletivo na plataforma SoulUp.
+                        </p>
+                    </div>
+                    <div class="step">
+                        <div class="step__number">2</div>
+                        <h3 class="step__title">Acumular pontos</h3>
+                        <p class="step__text">
+                            A SoulUp valida as ações e credita os pontos. Cada ação tem
+                            um valor definido e o saldo fica visível no painel.
+                        </p>
+                    </div>
+                    <div class="step">
+                        <div class="step__number">3</div>
+                        <h3 class="step__title">Converter em crédito</h3>
+                        <p class="step__text">
+                            O usuário converte os pontos acumulados: 100 pts = R$ 1,00
+                            em crédito para o transporte público.
+                        </p>
+                    </div>
+                    <div class="step">
+                        <div class="step__number">4</div>
+                        <h3 class="step__title">Usar a passagem</h3>
+                        <p class="step__text">
+                            Um voucher digital é gerado e pode ser usado diretamente
+                            no transporte público de São Paulo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="impact section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Números do projeto</h2>
+                </div>
+                <div class="impact__grid">
+                    <div class="impact__item">
+                        <div class="impact__number">61K</div>
+                        <div class="impact__label">Usuários na plataforma SoulUp</div>
+                    </div>
+                    <div class="impact__item">
+                        <div class="impact__number">183K</div>
+                        <div class="impact__label">Eventos sustentáveis registrados</div>
+                    </div>
+                    <div class="impact__item">
+                        <div class="impact__number">R$ 0</div>
+                        <div class="impact__label">Custo de transporte para quem participa</div>
+                    </div>
+                    <div class="impact__item">
+                        <div class="impact__number">77%</div>
+                        <div class="impact__label">Redução de CO2 por usuário ativo</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="benefits section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">O que o EcoQuest oferece</h2>
+                    <p class="section__subtitle">Os principais pontos do projeto.</p>
+                </div>
+                <div class="benefits__grid">
+                    <div class="card">
+                        <h3 class="card__title">Acesso ao transporte</h3>
+                        <p class="card__text">
+                            Pessoas que não conseguem pagar o transporte público podem
+                            usar os pontos para conseguir créditos de passagem.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Incentivo ambiental</h3>
+                        <p class="card__text">
+                            As ações sustentáveis geram pontos com valor real,
+                            o que incentiva o usuário a continuar participando.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Controle de fraudes</h3>
+                        <p class="card__text">
+                            O sistema valida as ações registradas e mantém
+                            um histórico de todas as conversões realizadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-section__title">Quer saber mais?</h2>
+                <p class="cta-section__text">Veja a solução completa ou entre em contato com a equipe.</p>
+                <div class="cta-section__actions">
+                    <a class="btn btn-primary btn-lg" href="pages/solucao.html">Ver a Solução</a>
+                    <a class="btn btn-outline" href="pages/contato.html">Contato</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__logo">EcoQuest</div>
+                    <p class="footer__desc">
+                        Transformando ações sustentáveis em mobilidade urbana.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Páginas</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="pages/solucao.html">Solução</a></li>
+                        <li><a href="pages/como-funciona.html">Como Funciona</a></li>
+                        <li><a href="pages/sobre.html">Sobre</a></li>
+                        <li><a href="pages/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Projeto</h4>
+                    <ul class="footer__links">
+                        <li><a href="pages/integrantes.html">Equipe</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2026 EcoQuest</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="btn-topo" style="position:fixed;bottom:2.4rem;right:2.4rem;width:4.4rem;height:4.4rem;border-radius:50%;background:var(--text-white);color:var(--bg-dark);border:none;font-size:1.8rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s;z-index:999;" aria-label="Voltar ao topo">&#8593;</button>
+
+    <script src="./js/main.js" defer></script>
     
 </body>
 </html>
