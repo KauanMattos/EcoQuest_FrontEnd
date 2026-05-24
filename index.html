@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EcoQuest - Seus pontos movem você</title>
 </head>
 <body>
+
+    <!-- Navbar -->
+         
+    <header class="navbar" id="navbar">
+        <div class="navbar__container">
+            <a class="navbar__logo" href="index.html">
+                <span class="logo-eco">Eco</span><span class="logo-quest">Quest</span>
+            </a>
+            <nav>
+                <ul class="navbar__menu" id="nav-menu">
+                    <li><a class="navbar__link active" href="index.html">Início</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="pages/solucao.html">Solução</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="pages/como-funciona.html">Como Funciona</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="pages/sobre.html">Sobre</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="pages/faq.html">FAQ</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="pages/integrantes.html">Equipe</a></li>
+                    <li><a class="navbar__link" onclick="fecharMenu()" href="pages/painel.html">Painel</a></li>
+                    <li><a class="navbar__link navbar__cta" href="pages/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="navbar__hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
     
 </body>
 </html>
