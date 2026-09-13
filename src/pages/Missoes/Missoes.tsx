@@ -13,7 +13,7 @@ export default function Missoes() {
           <p className="text-text-light mb-6">Explore missões sustentáveis e ganhe pontos</p>
           <input
             type="text"
-            placeholder="Buscar missão..."
+            placeholder="Buscar missão por nome ou descrição..."
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
             className="w-full max-w-md px-4 py-3 rounded-md border border-gray-200 text-text-main outline-none focus:border-primary"
