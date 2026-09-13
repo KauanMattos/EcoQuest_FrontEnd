@@ -87,7 +87,7 @@ Acesse: `http://localhost:5173`
 
 ---
 
-## 🗺️ Páginas da Aplicação
+##  Páginas da Aplicação
 
 | Rota | Página |
 |---|---|
@@ -123,5 +123,5 @@ Acesse: `http://localhost:5173`
 
 ## Link do Vídeo
 
-
+https://youtu.be/eUTJ3R2YzOw
 
