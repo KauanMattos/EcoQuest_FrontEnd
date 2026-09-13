@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="text-primary font-bold">eco</span>
               <span className="text-white font-normal">quest</span>
             </div>
-            <p className="text-sm">
+            <p className="text-sm leading-relaxed">
               Plataforma de gamificação sustentável que transforma ações ecológicas em missões e recompensas.
             </p>
           </div>
@@ -21,7 +21,9 @@ export default function Footer() {
             <ul className="space-y-2 list-none p-0 m-0">
               <li><Link to="/" className="text-gray-400 no-underline text-sm hover:text-primary">Início</Link></li>
               <li><Link to="/missoes" className="text-gray-400 no-underline text-sm hover:text-primary">Missões</Link></li>
+              <li><Link to="/nova-missao" className="text-gray-400 no-underline text-sm hover:text-primary">Nova Missão</Link></li>
               <li><Link to="/sobre" className="text-gray-400 no-underline text-sm hover:text-primary">Sobre</Link></li>
+              <li><Link to="/faq" className="text-gray-400 no-underline text-sm hover:text-primary">FAQ</Link></li>
               <li><Link to="/contato" className="text-gray-400 no-underline text-sm hover:text-primary">Contato</Link></li>
             </ul>
           </div>
@@ -47,7 +49,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm">
-          &copy; 2026 EcoQuest - FIAP. Todos os direitos reservados.
+          &copy; 2026 EcoQuest — FIAP. Todos os direitos reservados.
         </div>
       </div>
     </footer>
