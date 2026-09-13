@@ -8,6 +8,14 @@ interface ContatoFormData {
   mensagem: string
 }
 
+const assuntos = [
+  'Dúvida geral',
+  'Reportar um problema',
+  'Sugestão de melhoria',
+  'Parceria',
+  'Outro',
+]
+
 export default function Contato() {
   const [enviado, setEnviado] = useState(false)
 
@@ -34,7 +42,7 @@ export default function Contato() {
       <section className="bg-white border-b border-black py-14 px-8">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-4xl font-bold text-text-main mb-4">Contato</h1>
-          <p className="text-gray-500">Tem alguma dúvida? Fale com a gente!</p>
+          <p className="text-gray-500">Tem alguma dúvida ou sugestão? Fale com a gente!</p>
         </div>
       </section>
 
@@ -46,7 +54,7 @@ export default function Contato() {
               <label className="block text-sm font-semibold text-text-main mb-1">Nome *</label>
               <input
                 type="text"
-                placeholder="Seu nome"
+                placeholder="Seu nome completo"
                 className="w-full px-4 py-3 rounded-md border border-gray-200 outline-none focus:border-primary"
                 {...register('nome', { required: 'Informe seu nome' })}
               />
@@ -70,12 +78,15 @@ export default function Contato() {
 
           <div className="mb-4">
             <label className="block text-sm font-semibold text-text-main mb-1">Assunto *</label>
-            <input
-              type="text"
-              placeholder="Sobre o que você quer falar?"
+            <select
               className="w-full px-4 py-3 rounded-md border border-gray-200 outline-none focus:border-primary"
-              {...register('assunto', { required: 'Informe o assunto' })}
-            />
+              {...register('assunto', { required: 'Selecione um assunto' })}
+            >
+              <option value="">Selecione o assunto</option>
+              {assuntos.map(a => (
+                <option key={a} value={a}>{a}</option>
+              ))}
+            </select>
             {errors.assunto && <p className="text-red-500 text-sm mt-1">{errors.assunto.message}</p>}
           </div>
 
@@ -85,7 +96,7 @@ export default function Contato() {
               rows={5}
               placeholder="Escreva sua mensagem..."
               className="w-full px-4 py-3 rounded-md border border-gray-200 outline-none focus:border-primary resize-y"
-              {...register('mensagem', { required: 'Escreva sua mensagem' })}
+              {...register('mensagem', { required: 'Escreva sua mensagem', minLength: { value: 10, message: 'Mensagem muito curta (mínimo 10 caracteres)' } })}
             />
             {errors.mensagem && <p className="text-red-500 text-sm mt-1">{errors.mensagem.message}</p>}
           </div>
