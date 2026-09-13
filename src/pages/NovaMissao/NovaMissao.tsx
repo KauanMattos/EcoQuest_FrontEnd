@@ -30,7 +30,7 @@ export default function NovaMissao() {
       <section className="bg-white border-b border-black py-14 px-8">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-4xl font-bold text-text-main mb-4">Nova Missão</h1>
-          <p className="text-text-light">Crie uma missão sustentável para a comunidade</p>
+          <p className="text-text-light">Crie uma missão sustentável para a comunidade EcoQuest</p>
         </div>
       </section>
 
@@ -117,7 +117,7 @@ export default function NovaMissao() {
             <label className="block text-sm font-semibold text-text-main mb-2">Tags</label>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
               {tagOptions.map(tag => (
-                <label key={tag} className="flex items-center gap-2 p-3 rounded-md border border-gray-200 cursor-pointer">
+                <label key={tag} className="flex items-center gap-2 p-3 rounded-md border border-gray-200 cursor-pointer hover:border-primary">
                   <input
                     type="checkbox"
                     checked={selectedTags.includes(tag)}
