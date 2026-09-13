@@ -13,7 +13,7 @@ export default function MissionCard({ mission }: MissionCardProps) {
   }
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
+    <div className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow flex flex-col">
       <div className="flex items-center justify-between mb-3">
         <span className="bg-blue-50 text-primary border border-blue-200 text-xs font-semibold px-3 py-1 rounded">
           {mission.categoria}
@@ -24,7 +24,7 @@ export default function MissionCard({ mission }: MissionCardProps) {
       </div>
 
       <h3 className="text-lg font-bold text-text-main mb-2">{mission.titulo}</h3>
-      <p className="text-gray-500 text-sm mb-4">{mission.descricao}</p>
+      <p className="text-gray-500 text-sm mb-4 flex-1">{mission.descricao}</p>
 
       <div className="flex items-center justify-between mb-3">
         <span className="text-primary font-bold text-xl">{mission.pontos} pts</span>
@@ -43,7 +43,7 @@ export default function MissionCard({ mission }: MissionCardProps) {
 
       <Link
         to={`/missoes/${mission.id}`}
-        className="block text-center text-sm font-semibold text-primary border border-blue-200 rounded-md py-2 hover:bg-blue-50 no-underline"
+        className="block text-center text-sm font-semibold text-primary border border-blue-200 rounded-md py-2 hover:bg-blue-50 no-underline mt-auto"
       >
         Ver detalhes →
       </Link>
