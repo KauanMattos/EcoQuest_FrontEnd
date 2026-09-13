@@ -20,7 +20,7 @@ export default function Solucao() {
             <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold shrink-0">01</div>
             <div>
               <h3 className="font-bold text-text-main mb-1">Diagnóstico Ambiental</h3>
-              <p className="text-gray-500 text-sm">Identificamos os principais problemas ambientais urbanos e a falta de engajamento da população.</p>
+              <p className="text-gray-500 text-sm">Identificamos os principais problemas ambientais urbanos e a falta de engajamento da população com causas sustentáveis.</p>
             </div>
           </div>
 
@@ -28,7 +28,7 @@ export default function Solucao() {
             <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold shrink-0">02</div>
             <div>
               <h3 className="font-bold text-text-main mb-1">Gamificação como Solução</h3>
-              <p className="text-gray-500 text-sm">Utilizamos mecânicas de jogos — missões, pontos e conquistas — para transformar ações ecológicas em hábitos.</p>
+              <p className="text-gray-500 text-sm">Utilizamos mecânicas de jogos — missões, pontos e conquistas — para transformar ações ecológicas em hábitos diários.</p>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ export default function Solucao() {
             <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold shrink-0">04</div>
             <div>
               <h3 className="font-bold text-text-main mb-1">Impacto Mensurável</h3>
-              <p className="text-gray-500 text-sm">Cada missão apresenta o impacto ambiental real: CO2 evitado, litros economizados, resíduos desviados.</p>
+              <p className="text-gray-500 text-sm">Cada missão apresenta o impacto ambiental real: CO2 evitado, litros economizados, resíduos desviados do aterro.</p>
             </div>
           </div>
         </div>
