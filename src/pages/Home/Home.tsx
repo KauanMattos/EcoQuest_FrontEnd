@@ -15,7 +15,7 @@ export default function Home() {
           <p className="text-text-light text-lg mb-8">
             Complete missões sustentáveis, ganhe pontos e ajude a salvar o planeta.
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex gap-4 justify-center flex-wrap">
             <Link to="/missoes" className="bg-primary text-white font-semibold px-6 py-3 rounded-md no-underline hover:opacity-90">
               Ver Missões
             </Link>
