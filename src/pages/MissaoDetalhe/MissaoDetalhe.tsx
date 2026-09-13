@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 import { useMissions } from '../../contexts/MissionsContext'
 
 export default function MissaoDetalhe() {
@@ -68,6 +68,13 @@ export default function MissaoDetalhe() {
                 </div>
               </div>
             )}
+
+            <div className="bg-white border border-gray-200 rounded-xl p-6">
+              <h2 className="text-lg font-bold text-text-main mb-3">Outras Missões</h2>
+              <Link to="/missoes" className="text-primary text-sm font-semibold no-underline hover:opacity-80">
+                Ver todas as missões →
+              </Link>
+            </div>
           </div>
 
           <div className="space-y-4">
