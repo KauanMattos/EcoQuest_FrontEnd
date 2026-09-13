@@ -7,6 +7,10 @@ const perguntas = [
   { pergunta: 'Como os pontos funcionam?', resposta: 'Cada missão tem um valor em pontos de acordo com sua dificuldade. Missões difíceis valem mais pontos.' },
   { pergunta: 'O EcoQuest é gratuito?', resposta: 'Sim, o EcoQuest é 100% gratuito.' },
   { pergunta: 'Quais categorias existem?', resposta: 'Reflorestamento, Reciclagem, Alimentação, Água, Mobilidade e Energia.' },
+  { pergunta: 'Preciso criar uma conta para participar?', resposta: 'Atualmente o EcoQuest funciona de forma aberta, sem necessidade de cadastro. Qualquer pessoa pode visualizar e criar missões.' },
+  { pergunta: 'Como posso contribuir com o projeto?', resposta: 'Você pode contribuir criando novas missões, compartilhando com amigos e participando das ações ecológicas propostas pela comunidade.' },
+  { pergunta: 'As missões têm prazo de validade?', resposta: 'Não, as missões ficam disponíveis indefinidamente para que qualquer pessoa possa completá-las no seu próprio ritmo.' },
+  { pergunta: 'Como o EcoQuest ajuda o meio ambiente?', resposta: 'Ao gamificar ações sustentáveis, o EcoQuest incentiva hábitos ecológicos no dia a dia, criando um impacto positivo real no meio ambiente.' },
 ]
 
 export default function Faq() {
